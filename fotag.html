@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fotag!</title>
+
+    <!--
+    All of your CSS must go in css/fotag.css. Do not add styles to individual elements.
+    All of your CSS must be your own -- you may not use third-party CSS, like Bootstrap.
+    -->
+    <link rel="stylesheet" href="css/fotag.css"/>
+    <style>
+        .marking-button {
+            float:right;
+        }
+        .marking-div-clear {
+            clear:both;
+        }
+    </style>
+</head>
+<body class="grid" id="body">
+
+<div class="header">
+    <img id="gridView" src="./grid.png">
+    <img id="listView" src="./list.png">
+    <h1>Fotag</h1>
+    <div class="filter">
+        Filter by : <div class="ratingFilter"><span class="emptyStar"></span><span class="emptyStar"></span><span class="emptyStar"></span><span class="emptyStar"></span><span class="emptyStar"></span></div>
+    </div>
+</div>
+<div class="body-container">
+    <div id="app-container">
+        <div class="dataList">
+            <!--
+                 An attachment point to place all of your dynamically created content. Do not remove or
+                 rename this div.
+            -->
+        </div>
+    </div>
+</div>
+
+<!-- A template for a file chooser, to select multiple files. See FileChooser in view.js. -->
+<template id="file-chooser">
+    <input type="file" class="files-input" name="file_results[]" multiple />
+    <output id="list"></output>
+</template>
+
+<template id="imageElement">
+    <div class="dataElement">
+        <img src="" class="image">
+        <div class="imageDescription">
+            <span class="imageName"></span>
+            <span class="imageDate"></span>
+            <div class="ratingFilter starSection">
+                <span class="emptyStar"></span>
+                <span class="emptyStar"></span>
+                <span class="emptyStar"></span>
+                <span class="emptyStar"></span>
+                <span class="emptyStar"></span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Keep this here so TAs can run your unit tests -->
+<div id="unit-tests">
+
+    <!-- This button is for marking purposes to test your architecture. Do not remove it-->
+    <button class="marking-button">Mark Me!</button>
+    <div class="marking-div-clear"></div>
+
+    <a href="unit_tests.html">Run Unit Tests</a>
+</div>
+
+<script src="js/ext/underscore.js"></script>
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/fotag.js"></script>
+<script src="js/markers_code.js"></script>
+</body>
+</html>

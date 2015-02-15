@@ -1,0 +1,201 @@
+html, body, h1{
+    padding:0;
+    margin:0;
+}
+
+html{
+    font-family:Courier New;
+}
+
+.header {
+    padding: 15px 15px 0 15px;
+    border-bottom: 1px solid #eee;
+    background: #343642;
+    color: white;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.filter {
+    display: inline-block;
+    float: right;
+    line-height: 2em;
+}
+
+.body-container {
+    padding: 20px;
+    background-color: #eee;
+}
+
+#app-container {
+    box-shadow: #ddd 1px 1px 2px;
+    background-color: white;
+    padding: 30px;
+}
+
+.dataElement .image {
+    width: 230px;
+    height: 194px;
+    float: left;
+}
+
+.imageDescription {
+    display: inline-block;
+    height: 134px;
+    padding: 30px;
+}
+
+.dataElement {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.imageDescription .imageName {
+    font-size: 22px;
+    display: block;
+}
+
+.emptyStar:before{
+    content:'☆';
+    color: #FCD116;
+    font-size: 20px;
+}
+
+.filledStar:before {
+    content: '\2605';
+    color: #FCD116;
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.ratingFilter {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.starSection{
+    display:block;
+    top:0px;
+    text-align: left;
+}
+
+.ratingFilter .emptyStar:before, .ratingFilter .filledStar:before {
+    color: #FCD116;
+    cursor: pointer;
+}
+
+.ratingFilter > span:hover:before,
+.ratingFilter > span:hover ~ span:before {
+    content: "\2605";
+}
+
+.grid .dataElement {
+    display: inline-block;
+    padding-left: calc(16.66% - 115px);
+    padding-right: calc(16.66% - 115px);
+}
+
+.grid .dataElement.enlarge {
+    padding-left:calc(16.66% - 135px);
+    padding-right:calc(16.66% - 135px);
+}
+
+.dataElement img{
+    cursor:pointer;
+}
+
+.dataElement.enlarge img{
+    width:270px;
+    border:2px solid;
+    box-sizing:border-box;
+}
+
+@media (max-width: 1000px) {
+    .grid .dataElement {
+        display: inline-block;
+        padding-left: calc(25% - 115px);
+        padding-right: calc(25% - 115px);
+    }
+
+    .grid .dataElement.enlarge {
+        padding-left:calc(25% - 135px);
+        padding-right:calc(25% - 135px);
+    }
+}
+
+@media (max-width: 700px) {
+    .grid .dataElement, .dataElement {
+        display: inline-block;
+        padding-left: calc(50% - 115px);
+        padding-right: calc(50% - 115px);
+    }
+
+    .grid .dataElement.enlarge, .dataElement.enlarge {
+        padding-left:calc(50% - 135px);
+        padding-right:calc(50% - 135px);
+    }
+
+    .imageDescription {
+        display: block;
+        height: auto;
+        padding: 10px;
+        width: 210px;
+    }
+
+    .dataElement .image {
+        float: none;
+    }
+
+    .imageDescription .imageDate {
+        font-size: 14px;
+    }
+
+    .imageDescription .imageName {
+        font-size: 18px;
+    }
+}
+
+.grid .imageDescription {
+    display: block;
+    height: auto;
+    padding: 10px;
+    width: 210px;
+}
+
+.grid .dataElement .image {
+    float: none;
+}
+
+.grid .imageDescription .imageDate {
+    font-size: 14px;
+}
+
+.grid .imageDescription .imageName {
+    font-size: 18px;
+}
+
+#app-container > div:first-child {
+    border: 1px solid rgb(244, 244, 244);
+    background: rgba(238, 238, 238, 0.22);
+    padding-left: 20px;
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+#gridView, #listView {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.hide{
+    display:none !important;
+}
