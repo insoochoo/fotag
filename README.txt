@@ -1,4 +1,6 @@
-The following third-party libraries/code are provided:
+![fotag](https://raw.githubusercontent.com/insoochoo/fotag/master/images/fotag.png)
+
+The following third-party libraries/code are used:
 
 - Mocha (http://mochajs.org/)
 - Chai (http://chaijs.com/)
