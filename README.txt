@@ -1,3 +1,6 @@
+###Fotag
+<hr>
+
 ![fotag](https://raw.githubusercontent.com/insoochoo/fotag/master/images/fotag.png)
 
 The following third-party libraries/code are used:
